@@ -1,0 +1,61 @@
+{
+  "name": "@nekobato/chatgpt-websearch-mcp",
+  "version": "1.0.0",
+  "description": "A local MCP stdio server that provides access to the OpenAI (ChatGPT) API with web search capabilities for Claude Code and other MCP clients.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "chatgpt-websearch-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "check": "prettier --check src/**/*.ts",
+    "prepublishOnly": "pnpm run build && pnpm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekobato/chatgpt-websearch-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "chatgpt",
+    "openai",
+    "gpt-5",
+    "web-search",
+    "claude-code",
+    "ai",
+    "llm"
+  ],
+  "author": "nekobato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekobato/chatgpt-websearch-mcp/issues"
+  },
+  "homepage": "https://github.com/nekobato/chatgpt-websearch-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "openai": "^5.12.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4",
+    "tsx": "^4.20.4",
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.2"
+  }
+}
