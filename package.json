@@ -4,9 +4,7 @@
   "description": "A local MCP stdio server that provides access to the OpenAI (ChatGPT) API with web search capabilities for Claude Code and other MCP clients.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "chatgpt-websearch-mcp": "dist/index.js"
-  },
+  "bin": "dist/index.js",
   "files": [
     "dist",
     "README.md",
