@@ -4,7 +4,9 @@
   "description": "A local MCP stdio server that provides access to the OpenAI (ChatGPT) API with web search capabilities for Claude Code and other MCP clients.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": "dist/index.js",
+  "bin": {
+    "chatgpt-websearch-mcp": "dist/index.js"
+  },
   "files": [
     "dist",
     "README.md",
@@ -35,25 +37,25 @@
     "ai",
     "llm"
   ],
-  "author": "nekobato",
+  "author": "@nekobato",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nekobato/chatgpt-websearch-mcp/issues"
   },
   "homepage": "https://github.com/nekobato/chatgpt-websearch-mcp#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.17.2",
+    "@modelcontextprotocol/sdk": "^1.17.3",
     "openai": "^5.12.2"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
     "@typescript-eslint/eslint-plugin": "^8.39.1",
     "@typescript-eslint/parser": "^8.39.1",
     "@vitest/coverage-v8": "^3.2.4",
     "eslint": "^9.33.0",
     "prettier": "^3.6.2",
-    "vitest": "^3.2.4",
     "tsx": "^4.20.4",
-    "@types/node": "^24.2.1",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }
