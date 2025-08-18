@@ -1,6 +1,6 @@
 {
   "name": "@nekobato/chatgpt-websearch-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A local MCP stdio server that provides access to the OpenAI (ChatGPT) API with web search capabilities for Claude Code and other MCP clients.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
