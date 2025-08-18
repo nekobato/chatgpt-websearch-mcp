@@ -12,6 +12,9 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc && chmod +x dist/index.js",
     "dev": "tsx src/index.ts",

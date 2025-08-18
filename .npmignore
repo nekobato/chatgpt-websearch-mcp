@@ -1,7 +1,6 @@
 # Source files
 src/
 *.ts
-!dist/**/*.d.ts
 
 # Config files
 tsconfig.json
