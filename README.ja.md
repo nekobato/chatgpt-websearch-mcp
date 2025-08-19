@@ -12,7 +12,7 @@ Claude Codeやその他のMCPクライアント向けに、OpenAI (ChatGPT) API�
 $ claude mcp add chatgpt-websearch \
 	-s user \  # この行を省略すると、プロジェクトスコープでインストールされます
 	-e OPENAI_API_KEY=your-api-key \
-	-- npx @nekobato/chatgpt-websearch-mcp
+	-- npx @nekobato/chatgpt-websearch-mcp chatgpt-websearch-mcp
 ```
 
 ### またはconfigでの設定

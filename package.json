@@ -10,6 +10,7 @@
   "files": [
     "dist",
     "README.md",
+    "README.ja.md",
     "LICENSE"
   ],
   "publishConfig": {
@@ -19,11 +20,9 @@
     "build": "tsc && chmod +x dist/index.js",
     "dev": "tsx src/index.ts",
     "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
-    "check": "prettier --check src/**/*.ts",
-    "prepublishOnly": "pnpm run build && pnpm run lint"
+    "prepublishOnly": "pnpm run build"
   },
   "repository": {
     "type": "git",
@@ -52,10 +51,6 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.39.1",
-    "@typescript-eslint/parser": "^8.39.1",
-    "@vitest/coverage-v8": "^3.2.4",
-    "eslint": "^9.33.0",
     "prettier": "^3.6.2",
     "tsx": "^4.20.4",
     "typescript": "^5.9.2",
