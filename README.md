@@ -66,7 +66,7 @@ The following environment variables can be used to set default values:
 
 ### Requirements
 
-- Node.js 22+
+- Node.js ^22.23.4, ^24.22.1, or ^26.12.1 (October 2026 security fixes)
 - An OpenAI API key in `OPENAI_API_KEY`
 
 ### Commands
