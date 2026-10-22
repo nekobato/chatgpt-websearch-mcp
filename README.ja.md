@@ -66,7 +66,7 @@ $ claude mcp add chatgpt-websearch \
 
 ### 要件
 
-- Node.js 22+
+- Node.js ^22.23.4、^24.22.1、または ^26.12.1（2026年10月のセキュリティ修正版）
 - `OPENAI_API_KEY`にOpenAI APIキー
 
 ### コマンド
